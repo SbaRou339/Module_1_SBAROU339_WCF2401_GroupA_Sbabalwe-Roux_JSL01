@@ -5,7 +5,7 @@ function validateSyntax() {
 
     // TODO: Write your validation logic here
     // Check if input starts with 'pet_' and followed by alphanumeric characters
-    let petInfo = /^pet_\w+$/i;
+    let petInfo = /^pet_\d{4}[a-z]+$/i;
     if(petInfo.test(input)){
         result = "Syntax Valid";
     }
